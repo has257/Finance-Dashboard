@@ -2,7 +2,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
 const FinanceContext = createContext();
-const API_URL = "https://finance-mock-api.onrender.com";
+const API_URL = "https://finance-mock-api.onrender.com/transactions";
 const FALLBACK_TRANSACTIONS = [
   { id: 1, date: "2025-01-03", category: "Salary", type: "income", amount: 4500 },
   { id: 2, date: "2025-01-05", category: "Rent", type: "expense", amount: 1400 },
