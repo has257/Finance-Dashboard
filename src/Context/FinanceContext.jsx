@@ -48,7 +48,7 @@ export const FinanceProvider = ({ children }) => {
     setError("");
 
     try {
-      const response = await fetch(API_URL);
+      const response = await fetch(`${API_URL}`);
 
       if (!response.ok) {
         throw new Error(`Request failed with status ${response.status}`);
